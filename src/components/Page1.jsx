@@ -14,7 +14,7 @@ export default function Page1() {
         <div className={styles.linebreak}></div>
         <div className={styles.brands}>
           <div className={styles.item}>
-            <img src="src/assets/images/brand1.webp" alt="" />
+            <img src="assets/images/brand1.webp" alt="" />
               <div className={styles.brandexpand}>
                 <div className={styles.maindiv}>
                   <div className={styles.visibleelem}><h1 className={styles.dot}>•</h1></div>
@@ -25,11 +25,11 @@ export default function Page1() {
                 <div className={styles.hoverdiv}>
                   <div className={styles.img}>
                     <div className={styles.imgdiv}>
-                    <img className={styles.img1} src="src/assets/images/img1.webp" alt="" />
+                    <img className={styles.img1} src="assets/images/img1.webp" alt="" />
                     <div className={styles.text}>change the course cookbook</div>
                     </div>
                     <div className={styles.imgdiv}>
-                    <img className={styles.img2} src="src/assets/images/img2.webp" alt="" />
+                    <img className={styles.img2} src="assets/images/img2.webp" alt="" />
                     <div className={styles.text}>change the course cook kit</div>
                     </div>
                   </div>
@@ -38,7 +38,7 @@ export default function Page1() {
               </div>
           </div>
           <div className={styles.item}>
-            <img src="src/assets/images/brand2.webp" alt="" />
+            <img src="assets/images/brand2.webp" alt="" />
             <div className={styles.brandexpand}>
                 <div className={styles.maindiv}>
                   <div className={styles.visibleelem}><h1 className={styles.dot}>•</h1></div>
@@ -49,11 +49,11 @@ export default function Page1() {
                 <div className={styles.hoverdiv}>
                   <div className={styles.img}>
                     <div className={styles.imgdiv}>
-                    <img className={styles.img1} src="src/assets/images/img3.webp" alt="" />
+                    <img className={styles.img1} src="assets/images/img3.webp" alt="" />
                     <div className={styles.text}>change the course cookbook</div>
                     </div>
                     <div className={styles.imgdiv}>
-                    <img className={styles.img2} src="src/assets/images/img4.webp" alt="" />
+                    <img className={styles.img2} src="assets/images/img4.webp" alt="" />
                     <div className={styles.text}>change the course cook kit</div>
                     </div>
                   </div>
@@ -62,7 +62,7 @@ export default function Page1() {
               </div>
           </div>
           <div className={styles.item}>
-            <img src="src/assets/images/brand3.webp" alt="" />
+            <img src="assets/images/brand3.webp" alt="" />
             <div className={styles.brandexpand}>
                 <div className={styles.maindiv}>
                   <div className={styles.visibleelem}><h1 className={styles.dot}>•</h1></div>
@@ -73,11 +73,11 @@ export default function Page1() {
                 <div className={styles.hoverdiv}>
                   <div className={styles.img}>
                     <div className={styles.imgdiv}>
-                    <img className={styles.img1} src="src/assets/images/img5.webp" alt="" />
+                    <img className={styles.img1} src="assets/images/img5.webp" alt="" />
                     <div className={styles.text}>change the course cookbook</div>
                     </div>
                     <div className={styles.imgdiv}>
-                    <img className={styles.img2} src="src/assets/images/img6.webp" alt="" />
+                    <img className={styles.img2} src="assets/images/img6.webp" alt="" />
                     <div className={styles.text}>change the course cook kit</div>
                     </div>
                   </div>

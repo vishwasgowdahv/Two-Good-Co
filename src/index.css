@@ -1,6 +1,6 @@
 @font-face {
   font-family: twogood;
-  src: url('src/assets/fonts/Futura-Bold.ttf');
+  src: url('/assets/fonts/Futura-Bold.ttf');
 }
 
 *{

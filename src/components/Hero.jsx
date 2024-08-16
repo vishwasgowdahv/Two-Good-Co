@@ -61,7 +61,7 @@ gsap.registerPlugin(useGSAP);
         <div onMouseEnter={mouseenter} onMouseMove={mousemove} onMouseLeave={mouseleave} className={styles.mainvideo}>
             <div id='hoverelement' className={styles.hoverelement}>Play now</div>
             <div className={styles.video}>
-                <video autoPlay loop muted src="src/assets/videos/video.mp4"></video>
+                <video autoPlay loop muted src="assets/videos/video.mp4"></video>
             </div>
         </div>
     </div>
