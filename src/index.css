@@ -1,0 +1,10 @@
+@font-face {
+  font-family: twogood;
+  src: url('src/assets/fonts/Futura-Bold.ttf');
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  background-color: #F7F7F7;
+}

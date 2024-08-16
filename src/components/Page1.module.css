@@ -1,0 +1,182 @@
+.page1Wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+
+}
+
+
+.topline{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 2.5vw 2vw 0vw 2vw;
+    align-items: center;
+
+    
+}
+.buygood{
+    display: flex;
+    width: 94vw;
+    justify-content: space-between;
+    /* background-color: aqua; */
+}
+.buygood h4{
+    font-family:Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 70;
+    font-size: 13px;
+}
+.linebreak{
+    min-height: 1px;
+    width: 95.1%;
+    background-color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    margin: 5px auto;
+    padding: 0vw 2vw;
+}
+.brands{
+    display: flex;
+    gap: 2.3vw;
+    box-sizing: border-box;
+    padding: 2vw 0vw;
+    cursor: pointer;
+    /* justify-content: center;
+    align-items: center; */
+
+}
+.item{
+
+    width: 30vw;
+    height: 90vh;
+    position: relative;
+}
+.item img{
+    width: 30vw;
+}
+
+.brandexpand{
+    height: 9%;
+    margin: auto;
+    box-sizing: border-box;
+    width: 70%;
+    position: absolute;
+    left: 17%;
+    top: 50%;
+    border-radius: 25px;
+    background-color: #F5DFCF;
+    transition: all ease .4s;
+    overflow: hidden;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    
+}
+.brandexpand:hover{
+    height: 43%;
+    .maindiv{
+        height: 20%;
+    }
+}
+.maindiv{
+    height: 100%;
+    display: flex;
+    gap: 8%;
+    background-color: #F5DFCF;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+/* .maindiv:hover{
+    height: 20%;
+} */
+.visibleelem{
+    background-color: #F5DFCF;
+}
+
+.visibleelem h3{
+    font-family: Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 50;
+    background-color: #F5DFCF;
+    font-size: 12px;
+}
+.dot{
+font-size: 35px;
+background-color: #F5DFCF;
+}
+.visibleelem i{
+    font-size: 20px;
+background-color: #F5DFCF;
+}
+.hoverdiv{
+    width: 100%;
+    min-height: 100%;
+    
+background-color: #F5DFCF;
+}
+.img{
+    display: flex;
+    background-color: #F5DFCF;
+    justify-content: center;
+    align-items: center;
+}
+.imgdiv{
+    display: flex;
+    flex-direction: column;
+    background-color: #F5DFCF;
+}
+.imgdiv .text{
+font-family: Helvetica, sans-serif;
+text-transform: uppercase;
+box-sizing: border-box;
+padding: 3% 7%;
+background-color: #F5DFCF;
+font-size: 60%;
+text-align: center;
+}
+.img .img1{
+    
+background-color: #F5DFCF;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.img .img2{
+    
+    background-color: #F5DFCF;
+    height: 100%;
+    width: 100%;
+    }
+
+
+@media only screen and (max-width: 600px) {
+.brands{
+    flex-direction: column;
+    width: 90vw;
+    margin: auto;
+}
+.item{
+    height: 400px;
+    width: 90vw;
+}
+.item img{
+    object-fit: cover;
+    align-self: center;
+    width: 90vw;
+    height: 400px;
+}
+.brandexpand{
+    height: 11%;
+}
+.brandexpand:hover{
+    height: 49%;
+    .maindiv{
+        height: 20%;
+    }
+}
+
+}

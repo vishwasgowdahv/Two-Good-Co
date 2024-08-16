@@ -1,0 +1,67 @@
+.navwrapper {
+  /* background-color: green; */
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 25px;
+}
+.left h1 {
+  font-family: twogood;
+  font-size: 200%;
+  line-height: 87%;
+  text-transform: uppercase;
+}
+.right {
+  display: flex;
+  gap: 5vw;
+  padding: 1vw 0vw;
+}
+.right h3 {
+  font-size: 12px;
+  font-weight: 100;
+  position: relative;
+  text-transform: uppercase;
+  font-family: Helvetica, sans-serif;
+  /* background-color: yellow; */
+  padding: 0.5vw 0vw 0vw 0vw;
+  
+  cursor: pointer;
+overflow: hidden;
+}
+.right h3::after{
+  content: "";
+  height: 1%;
+  width: 0%;
+  background-color: black;
+  position: absolute;
+  bottom: 35px;
+  left: 0px;
+  transition: all ease .5s;
+}
+
+.right h3:hover::after {
+  width: 100%;
+}
+.right h3:hover{
+}
+.navlinks {
+  display: flex;
+  gap: 4vw;
+}
+.right i {
+  font-size: 20px;
+  font-weight: 100;
+}
+.cartsection {
+  gap: 5vw;
+  display: flex;
+}
+
+
+@media only screen and (max-width: 600px) {
+  body{
+    margin: auto;
+  }
+  .right h3 {
+    display: none;
+  }
+}
