@@ -49,8 +49,8 @@
 }
 .item{
 
-    width: 30vw;
-    height: 90vh;
+    width: 30%;
+    height: 90%;
     position: relative;
 }
 .item img{
@@ -64,7 +64,7 @@
     width: 70%;
     position: absolute;
     left: 17%;
-    top: 50%;
+    top:50%;
     border-radius: 25px;
     background-color: #F5DFCF;
     transition: all ease .4s;
@@ -76,7 +76,7 @@
     
 }
 .brandexpand:hover{
-    height: 43%;
+    height: 35%;
     .maindiv{
         height: 20%;
     }
@@ -128,6 +128,8 @@ background-color: #F5DFCF;
     display: flex;
     flex-direction: column;
     background-color: #F5DFCF;
+    justify-content: center;
+    align-items: center;
 }
 .imgdiv .text{
 font-family: Helvetica, sans-serif;
@@ -153,7 +155,7 @@ background-color: #F5DFCF;
     }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 875px) {
 .brands{
     flex-direction: column;
     width: 90vw;
@@ -173,10 +175,23 @@ background-color: #F5DFCF;
     height: 11%;
 }
 .brandexpand:hover{
-    height: 49%;
+    
+    top:10vmax;
+    height: 55%;
     .maindiv{
         height: 20%;
     }
 }
 
+
+
+.img .img1{
+        height: 65%;
+        width: 65%;
+        object-fit: cover;
+    }
+    .img .img2{
+        height: 65%;
+        width: 65%;
+        }
 }
