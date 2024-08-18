@@ -1,22 +1,112 @@
 .hovernav{
-min-width: 98.75vw;
+min-width: 100%;
+background-color: black;
+box-sizing: border-box;
+transition: all ease 1s;
+z-index: 1;
+color: white;
+display: flex;
+justify-content: space-between;
+}
+.mainhovernav{
+  overflow: hidden;
+  min-width: 100%;
 min-height: 100vh;
 background-color: black;
 box-sizing: border-box;
 transition: all ease 1s;
 position: absolute;
-top: -100vh;
+top: -110%;
 left: 0;
 z-index: 1;
 color: white;
 display: flex;
-justify-content: space-between;
+flex-direction: column;
 padding: 20px 25px;
 }
-.mainhovernav{
-  overflow: hidden;
+.navcontents{
+  width: 100%;
+  min-height: 80vh;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+}
+.foooter{
+  width: 100%;
+  display: flex;
+  background-color: transparent;
+}
+.main{
+  background-color: transparent;
+  width: 80%;
 }
 
+.mainitems{
+  background-color: transparent;
+  width: 100%;
+}
+.wrap{
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+}
+.mainitems h3{
+  background-color: transparent;
+  font-family: twogood;
+  text-transform: uppercase;
+  font-size: 250%;
+  text-align: end;
+  cursor: pointer;
+}
+
+.mainitems h3:hover{
+  color: grey;
+}
+.items{
+  width: 33%;
+  color: white;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+
+}
+.items h1{
+  background-color: transparent;
+  text-transform: uppercase;
+  font-family:Helvetica, sans-serif;
+  font-size: 80%;
+  font-weight: 100;
+  text-align: center;
+  color: grey;
+
+}
+.itemwrap{
+  min-height: 35%;
+  min-width: 100%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  padding: 10px 30px;
+}
+.lists{
+  background-color: transparent;
+  box-sizing: border-box;
+  padding: 20px 0px;
+}
+.lists h3{
+  background-color: transparent;
+  text-transform: capitalize;
+  font-family:Helvetica, sans-serif;
+  font-size: 85%;
+  font-weight: 100;
+  box-sizing: border-box;
+  padding: 2px 0px;
+  
+}
 .hoverleft{
   
   color: white;
@@ -56,6 +146,20 @@ padding: 20px 25px;
   background-color: black;
   cursor: pointer;
   overflow: hidden;
+}
+.hovernavlinks h3::after{
+  content: "";
+  height: 1%;
+  width: 0%;
+  background-color: white;
+  position: absolute;
+  bottom: 35px;
+  left: 0px;
+  transition: all ease .5s;
+}
+
+.hovernavlinks h3:hover::after {
+  width: 100%;
 }
 .hovercartsection{
   color: white;
@@ -141,5 +245,22 @@ overflow: hidden;
   }
   .hoverright h3{
     display: none;
+  }
+  .navcontents{
+    flex-direction: column-reverse;
+    align-items: end;
+  }
+  .mainhovernav{
+    top: -150%;
+  }
+  .items{
+  justify-content: start;
+    width: 100%;
+  }
+  .itemwrap{ 
+  font-size: 80%;
+  }
+  .mainitems h3{
+  font-size: 230%;
   }
 }

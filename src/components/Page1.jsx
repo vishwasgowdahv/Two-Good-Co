@@ -1,7 +1,29 @@
 import React from 'react'
 import styles from './Page1.module.css'
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
 
 export default function Page1() {
+
+  gsap.registerPlugin(useGSAP);
+  gsap.registerPlugin(ScrollTrigger) 
+  useGSAP(()=>{
+    gsap.from('.item',{
+       scale:0,
+        duration:1,
+        opacity:0,
+        scrollTrigger:{
+          trigger:'.item',
+          scroller:'body',
+          // markers:true,
+          end:'top 40%',
+          scrub:2
+
+        }
+
+    })
+})
+
   return (
     <>
       <div className={styles.page1Wrapper}>
@@ -12,8 +34,8 @@ export default function Page1() {
              </div>
         </div>
         <div className={styles.linebreak}></div>
-        <div className={styles.brands}>
-          <div className={styles.item}>
+        <div id='brands' className={styles.brands}>
+          <div className={`${styles.item} item`}>
             <img src="assets/images/brand1.webp" alt="" />
               <div className={styles.brandexpand}>
                 <div className={styles.maindiv}>
@@ -37,7 +59,7 @@ export default function Page1() {
                 </div>
               </div>
           </div>
-          <div className={styles.item}>
+          <div className={`${styles.item} item`}>
             <img src="assets/images/brand2.webp" alt="" />
             <div className={styles.brandexpand}>
                 <div className={styles.maindiv}>
@@ -61,7 +83,7 @@ export default function Page1() {
                 </div>
               </div>
           </div>
-          <div className={styles.item}>
+          <div className={`${styles.item} item`}>
             <img src="assets/images/brand3.webp" alt="" />
             <div className={styles.brandexpand}>
                 <div className={styles.maindiv}>
